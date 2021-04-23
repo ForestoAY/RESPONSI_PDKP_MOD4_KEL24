@@ -8,10 +8,10 @@ public:
 
 	for (int i=0;i<kata.length();i++){
         if (isupper(kata[i]))
-        result += char(int(kata[i]+26-kelompok-65)%26 +65);
+        result += char(int(kata[i]+kelompok-26-65)%26 +65);
         
  	  	else
-        result += char(int(kata[i]+26-kelompok-97)%26 +97);
+        result += char(int(kata[i]+kelompok-26-97)%26 +97);
     }
     return result;
 }
